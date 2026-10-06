@@ -23,20 +23,25 @@ Order is kept: names appear in the same order they were given.
 ## 2 function signature
 ```python
 # Parameters:
-# - 
+# - List of participants
 # Return type:
-# - 
+# - String of names of participants in list
 # Side Effects:
-# - 
-def your_function():
+# - None (that we know of)
+def see_participants():
     pass
 ```
 
-## 3 exampples
+## 3 examples
 ```python
 # scenario 1
+see_participants(["Charlotte"]) # "Charlotte"
 
 # scenario 2
+list_of_names = ["Charlotte", "Atisha"]
+see_participants(list_of_names) # "Charlotte & Atisha"
 
 # scenario 3
+list_of_names = ["Charlotte", "Atisha", "Ben"]
+see_participants(list_of_names) # "Charlotte, Atisha & Ben"
 ```
